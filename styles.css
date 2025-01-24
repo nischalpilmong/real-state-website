@@ -122,14 +122,13 @@ header nav{
 }
 
 .home__content p{
-  color: rgba(33, 3, 3, 0.4);
+  color: #c4efe9;
   margin-block: 10px 80px;
 }
 
 .weather h6{
-  font-size: 10px;
-  font-weight: 600;
-  color: rgb(64, 64, 64);
+  color: #c4efe9;
+  font-size: 14px;
 }
 
 .weather h6 span{
@@ -141,16 +140,17 @@ header nav{
 }
 
 .weather .arrow__btns i{
-  border: 1px solid rgb(64, 64, 64);
+  border: 1px solid #c4efe9;
   padding: 0px 3.3px;
   border-radius: 50%;
   cursor: pointer;
   transition: .3s linear;
+  color: #c4efe9;
 }
 
 .weather .arrow__btns i:hover{
-  color: #fff;
-  background-color: rgb(0, 0, 0, 0.3);
+  color: #c4eff9;
+  background-color: rgb(0, 0, 0);
 }
 
 header .header__content .images__cards{
@@ -185,3 +185,79 @@ header .header__content .images__cards{
   font-size: 14px;
   z-index: 999999;
 }
+
+.stay__options__box{
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.stay__options{
+  display: flex;
+  align-items: center;
+}
+
+.stay__options button{
+  padding: 10px 30px;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.stay__options button:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.stay__options button:nth-child(1){
+  border-radius: 10px 0 0 0;
+  background: #fff;
+  color: #000;
+}
+
+.stay__options button i{
+  margin-right: 5px;
+}
+
+.stay__options button:nth-last-child(1){
+  border-radius: 0 10px 0 0;
+}
+
+.stay__options__box .select__options{
+  width: 100%;
+  height: 135px;
+  background: #fff;
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 0px 5px 20px rgba(214, 214, 214, 0.8);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+
+.stay__options__box .select__options .card-one{
+  width: 26%;
+  height: 90%;
+  border: 2px solid rgba(226, 226, 226, 0.7);
+  border-radius: 10px;
+  padding: 10px 0 10px 30px;
+}
+
+.stay__options__box .select__options .card-one:nth-last-child(1){
+  width: 45%;
+}
+
+
+
+
+
+
+
