@@ -341,6 +341,7 @@ header .header__content .images__cards{
   height: 380px;
   top: -135px;
   overflow: hidden;
+  border: 1px solid #000;
   z-index: 0;
 }
 
@@ -359,7 +360,44 @@ header .header__content .images__cards{
   z-index: 2;
 }
 
+.map::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(180deg, transparent, #fff);
+  bottom: 0;
+  left: 0;
+  box-shadow: 4px 4px 25px gray;
+  border-radius: 8px;
+  z-index: 2;
+}
 
+.map .address__bx{
+  position: absolute;
+  width: 240px;
+  height: 65px;
+  background: #fff;
+  box-shadow: 4px 4px 25px gray;
+  border-radius: 8px;
+  top: 40%;
+  left: 30%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+.map .address__bx i{
+  font-size: 25px;
+}
+
+/************** HOME SECTION ************************/
+
+.home{
+}
 
 
 
