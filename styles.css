@@ -341,8 +341,9 @@ header .header__content .images__cards{
   height: 380px;
   top: -135px;
   overflow: hidden;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   z-index: 0;
+  
 }
 
 .map iframe{
@@ -368,7 +369,7 @@ header .header__content .images__cards{
   background: linear-gradient(180deg, transparent, #fff);
   bottom: 0;
   left: 0;
-  box-shadow: 4px 4px 25px gray;
+  /* box-shadow: 4px 4px 25px gray; */
   border-radius: 8px;
   z-index: 2;
 }
@@ -397,7 +398,132 @@ header .header__content .images__cards{
 /************** HOME SECTION ************************/
 
 .home{
+  position: relative;
+  width: 70%;
+  margin: auto;
+  height: 230px;
+  top: -220px; 
 }
+
+.home .title__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .title__button button{
+  position: absolute;
+  right: 0;
+  padding: 8px 15px;
+  background: #fff;
+  color: #000;
+  box-shadow: 3px 3px 25px rgb(233, 233, 233);
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.home .title__button button:hover{
+  background: #000;
+  color: #fff;
+}
+
+.home .title__button button i{
+  margin-left: 5px;
+}
+
+.home__cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
+  column-gap: 20px;
+}
+
+.card__two{
+  position: relative;
+  width: 180px;
+  height: 240px;
+  border-radius: 15px;
+}
+
+
+.home__img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.home__cards .home__location{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 999;
+  /* overflow: hidden; */
+}
+
+.home__location .bi{
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #fff;
+}
+
+.home__location .bi::after{
+  content: '';
+  position: absolute;
+  width: 165%;
+  height: 110%;
+  background: rgba(194,194,194,0.6);
+  top: -3px;
+  left: -35%;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.home__location .location__content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+}
+
+.home__location .location__content::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(245,245,245, .1);
+  border-radius: 0 0 13px 13px;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.home__location .location__content h4{
+  color: #fff;
+  padding: 10px 0 0 15px;
+  line-height: 10px;
+}
+.home__location .location__content p{
+  color: #fff;
+  padding: 10px 0 0 15px;
+  font-size: 12px;
+}
+
+
+
+
+
+
 
 
 
