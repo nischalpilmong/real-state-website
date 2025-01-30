@@ -47,8 +47,8 @@
                 <div class="weather">
                     <h6>42 °C<span>Very Hot</span></h6>
                     <div class="arrow__btns">
-                        <i class="bi bi-arrow-left"></i>
-                        <i class="bi bi-arrow-right"></i>
+                        <i class="bi bi-arrow-left" id="btn-left"></i>
+                        <i class="bi bi-arrow-right" id="btn-right"></i>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                  </div>
                  <div class="card">
                       <img src="./img/house__4.jpg" alt="" class="card__img" />
-                      <h6>+5</h6>
+                      <h6 id="h6"></h6>
                  </div>
             </div>
             <div class="stay__options__box">
@@ -79,29 +79,29 @@
                      <div class="card__one">
                         <h5>People</h5>
                         <input type="text" value="4 People" id="people" />
-                        <button>Less</button>
-                        <button>More</button>
+                        <button id="people__less">Less</button>
+                        <button id="people__more">More</button>
                      </div>
                      <div class="card__one">
                          <div class="check__in">
                              <h5>CHECK IN</h5>
                              <div class="date">
-                                <h3>Sat, 05 Jan</h3>
+                                <h3 id="checkin__data">Sat, Jan 08</h3>
                                 <input type="date" id="checkin" value="2022-09-11">
                                 <i class="bi bi-calender2-week-fill"></i>
                              </div>
-                             <button>Less</button>
-                             <button>More</button>
+                             <button id="checkin__less">Less</button>
+                             <button id="checkin__more">More</button>
                          </div>
                          <div class="check__out">
                               <h5>CHECK OUT</h5>
                               <div class="date">
-                                <h3>Sun, 06 Jan</h3>
+                                <h3 id="checkout__data">Sun, 06 Jan</h3>
                                 <input type="date" id="checkout" value="2022-09-12">
                                 <i class="bi bi-calender2-week-fill"></i>
                               </div>
-                              <button>Less</button>
-                              <button>More</button>
+                              <button id="checkout__less">Less</button>
+                              <button id="checkout__more">More</button>
                          </div>
                      </div>
                 </div>
